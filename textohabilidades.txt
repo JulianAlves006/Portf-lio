@@ -1,0 +1,5 @@
+
+
+Tenho experiencia em desenvolver projetos utilizando JavaScript, Node.js, Express.js e MySql. 
+Realizei meu maior projeto utilizando essas ferramentas, portanto meu principal conhecimento e habilidades estão voltadas a elas.
+Também trabalhei com C para treinar minha lógica de programação, e já realizei alguns projetos menores com PHP e MongoDB. 

@@ -1,19 +1,24 @@
 document.addEventListener('click', e => {
     const el = e.target;
     const tag = el.tagName.toLowerCase();
+
     if (tag === 'a') {
         e.preventDefault();
-        carregaPagina(el);
+        const valorClicado = obterValorLink(e);
+        carregaPagina(el, valorClicado);
     }
 });
 
-async function carregaPagina(el) {
+async function carregaPagina(el, valorSelecionado) {
     try {
         const href = el.getAttribute('href');
         const response = await fetch(href);
+
         if (response.status !== 200) throw new Error('ERRO 404 PAGE NOT FOUND');
+
         const html = await response.text();
         carregaResultado(html);
+        carregarConteudo(valorSelecionado); // Carrega o conteúdo após o clique
     } catch (e) {
         console.error(e);
     }
@@ -24,44 +29,33 @@ function carregaResultado(response) {
     resultado.innerHTML = response;
 }
 
+function obterValorLink(event) {
+    const valor = event.target.getAttribute('data-link');
+    return valor;
+}
+
 let isPortuguese = true; // Começa com o arquivo em português
-let valorSelecionado = "";
+let valor = ''; // Inicializa o valor vazio
 
 // Função para carregar o conteúdo do arquivo
-function carregarConteudo() {
-    // Variável para armazenar o valor do link clicado
-    const links = document.querySelectorAll('.mymenu');
+function carregarConteudo(valorSelecionado) {
+    if (!valorSelecionado) return;
 
-    // Adiciona o evento de clique em cada link
-    links.forEach(link => {
-        link.addEventListener('click', function (event) {
-            event.preventDefault(); // Evita o comportamento padrão do link
-
-            // Pega o valor associado ao link através do atributo 'data-link'
-            valorSelecionado = this.getAttribute('data-link');
-            const arquivo = isPortuguese ? `texto${valorSelecionado}.txt` : `textoIngles${valorSelecionado}.txt`;
-
-            // Faz a requisição para carregar o conteúdo do arquivo
-            fetch(arquivo)
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('titulo').innerText = data; // Atualiza o conteúdo
-                })
-                .catch(error => {
-                    console.error('Erro ao carregar o arquivo:', error);
-                    document.getElementById('titulo').innerText = 'Erro ao carregar o conteúdo.';
-                });
-
-            // Exibe o valor na tela ou faz alguma outra ação
-            console.log("Link clicado: " + valorSelecionado);
+    valor = valorSelecionado; // Atualiza o valor global
+    const arquivo = isPortuguese ? `texto${valorSelecionado}.txt` : `textoIngles${valorSelecionado}.txt`;
+    fetch(arquivo)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('titulo').innerHTML = data;
+        })
+        .catch(error => {
+            console.error('Erro ao carregar o arquivo:', error);
+            document.getElementById('titulo').innerText = 'Erro ao carregar o conteúdo.';
         });
-    });
 }
 
 // Função para alternar entre os arquivos
 document.getElementById('alternarBtn').addEventListener('click', () => {
-    isPortuguese = !isPortuguese; // Alterna entre português e inglês
-    carregarConteudo(); // Carrega o conteúdo do novo arquivo
+    isPortuguese = !isPortuguese;
+    carregarConteudo(valor); // Carrega o conteúdo com a nova linguagem
 });
-
-
