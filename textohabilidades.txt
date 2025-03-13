@@ -1,5 +1,8 @@
-
-
-Tenho experiencia em desenvolver projetos utilizando JavaScript, Node.js, Express.js e MySql. 
-Realizei meu maior projeto utilizando essas ferramentas, portanto meu principal conhecimento e habilidades estão voltadas a elas.
-Também trabalhei com C para treinar minha lógica de programação, e já realizei alguns projetos menores com PHP e MongoDB. 
+<img class="icone" style="max-width: 12%" src="./node-js-icon-29.jpg"></img>
+<img class="icone" style="max-width: 13%" src="./javascript-logo-7539.png"></img>
+<img class="icone" style="max-width: 16%" src="./1_q6b32yNdlpyQjDZlAc1QEg.png"></img>
+<img class="icone" style="max-width: 11%" src="./OIP.jfif"></img>
+<img class="icone" style="max-width: 15%" src="./R.png"></img>
+<img class="icone" style="max-width: 13%" src="./2090046.webp"></img>
+<br>
+Tenho experiência no desenvolvimento de projetos utilizando JavaScript, Node.js, Express.js e MySQL. O maior projeto que realizei foi com essas tecnologias, o que me proporcionou um domínio sólido dessas ferramentas. Além disso, trabalhei com C para aprimorar minha lógica de programação e, ao longo da minha trajetória, desenvolvi alguns projetos menores utilizando PHP e MongoDB.

@@ -1,1 +1,8 @@
-testeHabilidades
+<img class="icone" style="max-width: 12%" src="./node-js-icon-29.jpg"></img>
+<img class="icone" style="max-width: 13%" src="./javascript-logo-7539.png"></img>
+<img class="icone" style="max-width: 16%" src="./1_q6b32yNdlpyQjDZlAc1QEg.png"></img>
+<img class="icone" style="max-width: 11%" src="./OIP.jfif"></img>
+<img class="icone" style="max-width: 15%" src="./R.png"></img>
+<img class="icone" style="max-width: 13%" src="./2090046.webp"></img>
+<br>
+I have experience in developing projects using JavaScript, Node.js, Express.js, and MySQL. The largest project I worked on was built with these technologies, which provided me with a solid understanding of them. Additionally, I have worked with C to improve my programming logic and have completed several smaller projects using PHP and MongoDB.

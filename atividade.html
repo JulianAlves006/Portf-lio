@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importância do HTML Semântico</title>
+    <style>
+        /* Estilos básicos para visualização */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, main, footer {
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ccc;
+        }
+        nav {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- O elemento <header> representa o cabeçalho da página, contendo informações introdutórias ou de navegação. -->
+    <header>
+        <h1>HTML Semântico</h1>
+    </header>
+
+    <!-- O elemento <nav> define uma seção que contém links de navegação para outras partes do site. -->
+    <nav>
+        <a href="#introdução">Introducao</a>
+    </nav>
+
+    <!-- O elemento <main> representa o conteúdo principal do documento, sendo único e central. -->
+    <main>
+        <!-- O elemento <section> agrupa conteúdo relacionado dentro de uma mesma temática. -->
+        <section id="introducao">
+            <h2>Introdução</h2>
+            <p>O HTML semântico refere-se ao uso de tags que expressam o significado do conteúdo nelas contido.</p>
+        </section>
+
+        <section id="beneficios">
+            <h3>Benefícios</h3>
+            <!-- O elemento <article> representa uma composição independente dentro de um documento, como uma notícia ou post. -->
+            <article>
+                <b><p>Acessibilidade</p></b>
+                <p>Tags semânticas melhoram a navegação para tecnologias assistivas.</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- O elemento <footer> representa o rodapé do documento, contendo informações de rodapé ou links relacionados. -->
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>
