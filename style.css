@@ -66,3 +66,27 @@ button:hover{
   padding: 20px;
   max-width: 25%;
 }
+
+.git{
+  max-width: 3%;
+  transition: background-color 1s ease;
+  border-radius: 35px;
+}
+
+.git:hover{
+  background-color: #919191;
+}
+
+.insta{
+  max-width: 3%;
+}
+
+
+.linkedin{
+  max-width: 3%;
+}
+
+.redes{
+
+  background-color: blue;
+}
