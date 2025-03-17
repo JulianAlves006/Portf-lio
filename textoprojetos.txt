@@ -1,3 +1,6 @@
-  <h3>Projeto 3</h3>
-            <p>Descrição breve do projeto 3.</p>
-            <a href="https://github.com/JulianAlves006" target="_blank">Ver mais</a>
+<div class="divProjetos">
+    <h3>FreeFrom</h3>
+    <img class="imgProjetos" src="./freefrom.png"></img>
+    <p>Um marketplace desenvolvido com node.js e mysql</p>
+    <a href="https://github.com/samaraCassie/FreeFrom" target="_blank">Ver mais</a>
+</div>
