@@ -40,9 +40,10 @@ let valor = ''; // Inicializa o valor vazio
 // Função para carregar o conteúdo do arquivo
 function carregarConteudo(valorSelecionado) {
     if (!valorSelecionado) return;
-
+    const botao = document.getElementById('alternarBtn');
     valor = valorSelecionado; // Atualiza o valor global
     const arquivo = isPortuguese ? `texto${valorSelecionado}.txt` : `textoIngles${valorSelecionado}.txt`;
+    botao.textContent = isPortuguese ? 'Change language' : 'Alterar linguagem';
     fetch(arquivo)
         .then(response => response.text())
         .then(data => {
