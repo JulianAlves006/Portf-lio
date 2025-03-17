@@ -60,3 +60,7 @@ document.getElementById('alternarBtn').addEventListener('click', () => {
     isPortuguese = !isPortuguese;
     carregarConteudo(valor); // Carrega o conteúdo com a nova linguagem
 });
+
+function redirecionarGitHub() {
+    window.open('https://github.com/samaraCassie/FreeFrom', '_blank');
+  }
