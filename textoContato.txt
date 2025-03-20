@@ -14,7 +14,7 @@
         </a>
         <p>WhatsApp</p>
         <a href="http://wa.me/+5547988093803">
-            <img class="whatsAppContato" src="./whatsapp.png.png" alt="WhatsApp">
+            <img class="whatsAppContato" src="./whatsapp.png" alt="WhatsApp">
         </a>
     </div>
 

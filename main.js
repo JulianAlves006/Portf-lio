@@ -61,6 +61,8 @@ document.getElementById('alternarBtn').addEventListener('click', () => {
     carregarConteudo(valor); // Carrega o conteúdo com a nova linguagem
 });
 
+carregarConteudo("home");
+
 function redirecionarGitHub() {
     window.open('https://github.com/samaraCassie/FreeFrom', '_blank');
-  }
+}
