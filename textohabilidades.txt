@@ -6,3 +6,9 @@
 <img class="icone" style="max-width: 13%" src="./2090046.webp"></img>
 <br>
 Tenho experiência no desenvolvimento de projetos utilizando JavaScript, Node.js, Express.js e MySQL. O maior projeto que realizei foi com essas tecnologias, o que me proporcionou um domínio sólido dessas ferramentas. Além disso, trabalhei com C para aprimorar minha lógica de programação e, ao longo da minha trajetória, desenvolvi alguns projetos menores utilizando PHP e MongoDB.
+<footer class="redes">
+        <a href="https://github.com/JulianAlves006"><img class="git" src="./kindpng_1280192.png" alt="GitHub"></a>
+        <a href="https://www.instagram.com/julian.alvs_006_/"><img class="insta" src="./insta.png" alt="Insta"></a>
+        <a href="https://www.linkedin.com/in/julian-alves-09b10426b/"><img class="linkedin" src="./linkedin.png" alt="Linkedin"></a>
+        <a href="http://wa.me/+5547988093803"><img class="whatsapp" src="./whatsapp.png" alt="WhatsApp"></a>
+</footer>

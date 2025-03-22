@@ -1,1 +1,8 @@
 My name is Julian, I am 17 years old, and I have a deep passion for music, gaming, TV shows, and anime. However, my true passion lies in programming and information technology. I love logical challenges that require creative thinking to solve. I completed a technical course at IFSC in Jaraguá do Sul, where I had the opportunity to learn and develop skills in programming and project development. Currently, I am pursuing a degree in Software Engineering at the Catholic University of Jaraguá do Sul.
+
+<footer class="redes">
+    <a href="https://github.com/JulianAlves006"><img class="git" src="./kindpng_1280192.png" alt="GitHub"></a>
+    <a href="https://www.instagram.com/julian.alvs_006_/"><img class="insta" src="./insta.png" alt="Insta"></a>
+    <a href="https://www.linkedin.com/in/julian-alves-09b10426b/"><img class="linkedin" src="./linkedin.png" alt="Linkedin"></a>
+    <a href="http://wa.me/+5547988093803"><img class="whatsapp" src="./whatsapp.png" alt="WhatsApp"></a>
+</footer>

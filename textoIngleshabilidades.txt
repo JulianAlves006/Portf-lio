@@ -5,4 +5,12 @@
 <img class="icone" style="max-width: 15%" src="./R.png"></img>
 <img class="icone" style="max-width: 13%" src="./2090046.webp"></img>
 <br>
+
 I have experience in developing projects using JavaScript, Node.js, Express.js, and MySQL. The largest project I worked on was built with these technologies, which provided me with a solid understanding of them. Additionally, I have worked with C to improve my programming logic and have completed several smaller projects using PHP and MongoDB.
+
+<footer class="redes">
+    <a href="https://github.com/JulianAlves006"><img class="git" src="./kindpng_1280192.png" alt="GitHub"></a>
+    <a href="https://www.instagram.com/julian.alvs_006_/"><img class="insta" src="./insta.png" alt="Insta"></a>
+    <a href="https://www.linkedin.com/in/julian-alves-09b10426b/"><img class="linkedin" src="./linkedin.png" alt="Linkedin"></a>
+    <a href="http://wa.me/+5547988093803"><img class="whatsapp" src="./whatsapp.png" alt="WhatsApp"></a>
+</footer>

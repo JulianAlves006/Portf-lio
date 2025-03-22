@@ -1,1 +1,7 @@
 Meu nome é Julian, tenho 17 anos e sou apaixonado por música, jogos, séries e animes. Minha verdadeira paixão, no entanto, é programação e tecnologia da informação. Adoro desafios lógicos que exigem raciocínio criativo para serem resolvidos. Concluí um curso técnico no IFSC de Jaraguá do Sul, onde tive a oportunidade de aprender e desenvolver habilidades em programação e desenvolvimento de projetos. Atualmente, estou cursando Engenharia de Software na Universidade Católica de Jaraguá do Sul.
+<footer class="redes">
+        <a href="https://github.com/JulianAlves006"><img class="git" src="./kindpng_1280192.png" alt="GitHub"></a>
+        <a href="https://www.instagram.com/julian.alvs_006_/"><img class="insta" src="./insta.png" alt="Insta"></a>
+        <a href="https://www.linkedin.com/in/julian-alves-09b10426b/"><img class="linkedin" src="./linkedin.png" alt="Linkedin"></a>
+        <a href="http://wa.me/+5547988093803"><img class="whatsapp" src="./whatsapp.png" alt="WhatsApp"></a>
+    </footer>
