@@ -2,5 +2,5 @@
     <h3>FreeFrom</h3>
     <img class="imgProjetos" src="./freefrom.png"></img>
     <p>Um marketplace desenvolvido com node.js e mysql</p>
-      <a href="javascript:void(0);" onclick="redirecionarGitHub()">Ver mais</a>
+    <a href="javascript:void(0);" onclick="redirecionarGitHub()">Ver mais</a>
 </div>

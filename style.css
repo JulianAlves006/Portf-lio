@@ -1,20 +1,41 @@
-.conteudo{
-    background-color: rgba(231, 231, 231, 0.137);
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.26);
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    max-width: 70%;
-    margin-left: 15%;
-    margin-top: 5%;
-    border-radius: 5px;
-    flex-direction: column;
+*{
+  font-family: 'open_sansbold';
 }
+
+.conteudo{
+  margin-top: 5%;
+}
+
+nav{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  background-color: #333;
+}
+
+nav p{
+  cursor: pointer;
+  margin-top: 2%;
+  margin-left: 1%;
+  color:#919191;
+
+}
+
+.linguagem{
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom .3s linear;
+}
+
+.linguagem:hover{
+  border-bottom: 2px solid #919191;
+}
+
 ul {
-  width:100%; 
-  float:left; 
+  margin-left: 15%;
+  top: 0;
   text-align:center; 
-  box-sizing: border-box;
 }
 li {
   padding-right: 20px;
@@ -22,44 +43,33 @@ li {
   list-style:none;
 }
 li .mymenu {
- font-family: 'open_sansbold';
- font-size:1.6em;
- text-decoration: none;
- color:#919191;
- -webkit-border-box: 0 1px 0 0 #ffffff;
- border-bottom: 4px solid transparent;
- -webkit-transition: border-bottom .3s linear;
+  font-family: 'open_sansbold';
+  font-size:1.6em;
+  text-decoration: none;
+  color:#919191;
+  -webkit-border-box: 0 1px 0 0 #ffffff;
+  border-bottom: 4px solid transparent;
+  -webkit-transition: border-bottom .3s linear;
 }
 li .mymenu:hover {
-  
   border-bottom:4px solid #919191;
-}
-.btnsim{
-  display: block;
-  color: #919191;
-  text-align: center;
-  text-decoration: none;
-  border-color: #919191;
-  background-color: #919191;
-  outline: 2px solid #bbb;
-  font-size: large;
 }
 
 .carregando{
-    max-width: 10%;
+  max-width: 10%;
 }
 
-button{
-  font-size: medium;
+.mudarLinguagem{  
+  margin-top: 1%;
   cursor: pointer;
-  border: none;
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom: 2px solid transparent;
+  margin-left: 1%;
+  max-width: 3%;
+  height: 3%;
 }
 
-button:hover{
-  border-bottom: 2px solid #919191;
-  -webkit-transition: border-bottom .3s linear;
+.mudarLinguagem:hover{
+  color:  #919191;
+  -webkit-transition: color .3s linear;
 }
 
 .icone{
@@ -149,7 +159,7 @@ button:hover{
 
 .divProjetos{
   border: 2px solid;
-  max-width: 35%;
+  max-width: 30%;
 }
 
 .container {
@@ -163,16 +173,15 @@ button:hover{
 .sociais {
   display: flex;
   flex-direction: column;
-  gap: 15px;
   max-width: 20%;
-  margin-right: 20%;
+  margin-right: 5%;
 }
 
 .gitContato,
 .instaContato,
 .linkedinContato,
 .whatsAppContato {
-  max-width: 40%;
+  max-width: 30%;
   transition: background-color 0.3s ease;
   border-radius: 50px;
 }
@@ -182,15 +191,16 @@ button:hover{
 }
 
 form {
-  background-color: #333;
+  background-color: #3f3f3f;
   padding: 50px;
   border-radius: 8px;
   color: #fff;
   max-width: 50%; /* Define o tamanho máximo do formulário */
+  width: 25%;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  margin-right: 30%;
+  gap: 25px;
+  margin-right: 25%;
 }
 
 form label {

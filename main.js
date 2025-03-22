@@ -16,17 +16,10 @@ async function carregaPagina(el, valorSelecionado) {
 
         if (response.status !== 200) throw new Error('ERRO 404 PAGE NOT FOUND');
 
-        const html = await response.text();
-        carregaResultado(html);
         carregarConteudo(valorSelecionado); // Carrega o conteúdo após o clique
     } catch (e) {
         console.error(e);
     }
-}
-
-function carregaResultado(response) {
-    const resultado = document.querySelector('#resultado');
-    resultado.innerHTML = response;
 }
 
 function obterValorLink(event) {
@@ -41,9 +34,21 @@ let valor = ''; // Inicializa o valor vazio
 function carregarConteudo(valorSelecionado) {
     if (!valorSelecionado) return;
     const botao = document.getElementById('alternarBtn');
+    const p = document.getElementById('linguagemTexto');
+    const principal = document.getElementById('principal');
+    const sobre = document.getElementById('sobre');
+    const habilidades = document.getElementById('habilidades');
+    const projetos = document.getElementById('projetos');
+    const contato = document.getElementById('contato');
     valor = valorSelecionado; // Atualiza o valor global
     const arquivo = isPortuguese ? `texto${valorSelecionado}.txt` : `textoIngles${valorSelecionado}.txt`;
-    botao.textContent = isPortuguese ? 'Change language' : 'Alterar linguagem';
+    botao.textContent = isPortuguese ? document.getElementById('alternarBtn').src = './brasil (1).png' : document.getElementById('alternarBtn').src = './estados-unidos-da-america.png';
+    p.textContent = isPortuguese ? 'Change language' : 'Mudar linguagem';
+    principal.textContent = isPortuguese ? 'Principal' : 'Home';
+    sobre.textContent = isPortuguese ? 'Sobre' : 'About me';
+    habilidades.textContent = isPortuguese ? 'Habilidades' : 'Skills';
+    projetos.textContent = isPortuguese ? 'Projetos' : 'Projects';
+    contato.textContent = isPortuguese ? 'Contato' : 'Contact';
     fetch(arquivo)
         .then(response => response.text())
         .then(data => {
@@ -60,6 +65,11 @@ document.getElementById('alternarBtn').addEventListener('click', () => {
     isPortuguese = !isPortuguese;
     carregarConteudo(valor); // Carrega o conteúdo com a nova linguagem
 });
+
+function alterarLinguagem(){
+    isPortuguese = !isPortuguese;
+    carregarConteudo(valor); // Carrega o conteúdo com a nova linguagem
+}
 
 carregarConteudo("home");
 

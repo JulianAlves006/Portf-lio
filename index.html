@@ -8,21 +8,26 @@
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
 </head>
 <body>
-    <button id="alternarBtn" onclick="alterarTexto()"></button>
-    <div class="conteudo">
+    <nav>
+        <!-- Botão que altera a linguagem da pagina -->
+        <img class="mudarLinguagem" id="alternarBtn" onclick="alterarTexto()" onclick="" src="./brasil (1).png" alt="Brasil"> <p class="linguagem" onclick="alterarLinguagem()" id="linguagemTexto">Mudar linguagem</p>
+            
+        <!-- Lista que mostra as opções de paginas que podem ser carregadas na pagina-->
         <ul>
-            <ul>
-                <li><a onclick="carregarConteudo('home')" style="cursor: pointer;" class="mymenu" title="Home" data-link="home">Home</a></li>
-                <li><a href="sobre.html" class="mymenu" title="Sobre" data-link="sobre">Sobre</a></li>
-                <li><a href="habilidades.html" class="mymenu" title="Habilidades" data-link="habilidades">Habilidades</a></li>
-                <li><a href="Projetos.html" class="mymenu" title="Projetos" data-link="projetos">Projetos</a></li>
-                <li><a href="Contato.html" class="mymenu" title="Contato" data-link="Contato">Contato</a></li>
-            </ul>
+            <li><a onclick="carregarConteudo('home')" id="principal" style="cursor: pointer;" class="mymenu" title="Home" data-link="home">Principal</a></li>
+            <li><a href="sobre.html" id="sobre" class="mymenu" title="Sobre" data-link="sobre">Sobre</a></li>
+            <li><a href="habilidades.html" id="habilidades" class="mymenu" title="Habilidades" data-link="habilidades">Habilidades</a></li>
+            <li><a href="Projetos.html" id="projetos" class="mymenu" title="Projetos" data-link="projetos">Projetos</a></li>
+            <li><a href="Contato.html" id="contato" class="mymenu" title="Contato" data-link="Contato">Contato</a></li>
         </ul>
-        <div id="resultado" align="center">
-            <div style="width:100%; float:left; text-align:center; box-sizing: border-box;" align="center"><h2 id="titulo"><img class="carregando" src="loading-5325468-4450387.webp"></h2></div>
-        </div>
-    </div>
+    </nav>
+    
+    <!-- Section que renderiza as paginas selecionadas -->
+    <section class="conteudo" id="resultado" align="center">
+        <div style="width:100%; float:left; text-align:center; box-sizing: border-box;" align="center"><h2 id="titulo"><img class="carregando" src="loading-5325468-4450387.webp"></h2></div>
+    </section>
+
+    <!-- Footer com as redes sociais e contatos -->
     <footer class="redes">
         <a href="https://github.com/JulianAlves006"><img class="git" src="./kindpng_1280192.png" alt="GitHub"></a>
         <a href="https://www.instagram.com/julian.alvs_006_/"><img class="insta" src="./insta.png" alt="Insta"></a>
